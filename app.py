@@ -297,7 +297,6 @@ except Exception as error:
 
 with st.sidebar:
     st.header("Navigasi Demo")
-    st.write("Gunakan urutan ini saat presentasi:")
     st.write("1. Pilih contoh skenario")
     st.write("2. Cek input utama")
     st.write("3. Klik hasil prediksi")
@@ -393,10 +392,3 @@ if st.button("Lihat Hasil Prediksi", type="primary"):
         st.dataframe(pd.DataFrame([readable_input]), use_container_width=True)
 
 st.divider()
-
-with st.expander("Contekan narasi singkat"):
-    st.write(
-        "Di bagian simulasi ini, kami ingin menunjukkan bahwa model tidak langsung membaca teks kategori begitu saja. "
-        "Data yang dipilih pengguna diproses terlebih dahulu lewat preprocessing. Setelah format datanya sesuai, "
-        "barulah model melakukan prediksi apakah calon peminjam cenderung masuk risiko rendah atau risiko tinggi."
-    )
