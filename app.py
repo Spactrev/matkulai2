@@ -393,12 +393,6 @@ if st.button("Lihat Hasil Prediksi", type="primary"):
         st.dataframe(pd.DataFrame([readable_input]), use_container_width=True)
 
 st.divider()
-st.subheader("Alur Pipeline yang Dijelaskan ke Dosen")
-st.write(
-    "Input calon peminjam masuk ke DataFrame, lalu fitur angka dinormalisasi dengan StandardScaler. "
-    "Fitur kategori diubah menjadi angka dengan OneHotEncoder. Setelah itu data masuk ke model Random Forest "
-    "untuk menghasilkan prediksi risiko kredit."
-)
 
 with st.expander("Contekan narasi singkat"):
     st.write(
